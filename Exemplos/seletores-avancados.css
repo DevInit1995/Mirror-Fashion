@@ -1,0 +1,100 @@
+/*seletor de irmãos*/
+h2 ~ p {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-size:larger;
+    color:#0000ff;
+}
+
+/*Seletor de irmão adjacentes*/
+h2 + p {
+    font-variant: small-caps;
+}
+
+/*Seletor de filho direto*/
+article > h1 {
+    color: blue;
+}
+
+/*Negação*/
+/*p {
+    color: gray;
+}
+
+p#especial {
+    color: black;
+}*/
+
+p:not(#especial) {
+    color: gray;
+}
+
+/*Pseudo-classes*/
+li:first-child {
+    color: red;
+}
+
+li:last-child {
+    color: blue;
+}
+
+/*Pseudo-classes - NTH-CHILD*/
+li:nth-child(3) {
+    color:yellow;
+}
+
+li:nth-child(4) {
+    color: brown;
+}
+
+/*Pseudo-classes - NTH-CHILD-expressão aritmética*/
+/* elementos pares */
+li:nth-child(2n) {
+   color:green;
+}
+
+/* elementos impares */
+li:nth-child(2n+1) {
+    color: pink;
+}
+
+/*Pseudo Classes de Estado*/
+/*seleciona o link no exato momento em que passamos o mouse por cima dele */
+a:hover {
+    color: yellowgreen;
+}
+
+/* seleciona todas as âncoras que têm o atributo "href", ou seja, links */
+a:link {
+    background-color: #ff0000;
+}
+
+/* seleciona todos os links cujo valor de "href" é um endereço já visitado */
+a:visited {
+    background-color: black;
+}
+
+/* seleciona o link no exato momento em que clicamos nele */
+a:active {
+    background-color: white;
+}
+
+p:first-letter {
+    font-size: 250%;
+    font-style: italic;
+}
+
+/*Novos conteúdos*/
+a:before {
+    content: '[';
+    color: red;
+}
+
+a:after {
+    content: ']';
+    color: red;
+}
+
+a[href^=https]:after {
+    content: '(externo)';
+}

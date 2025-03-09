@@ -4,17 +4,89 @@ body {
     width: 940px;
 }
 
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.menu-opcoes ul {
+    font-size: 15px;
+}
+
+.menu-opcoes ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.menu-opcoes ul {
+    font-size: 15px;
+}
+
+.menu-opcoes ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.sacola {
+    background: url(../img/sacola.png) no-repeat top right;
+
+    font-size: 14px;
+    padding-right: 35px;
+    text-align: right;
+    width: 350px;
+    padding-top: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+p {
+    /*color: blue;
+    background-color: yellow;
+    font-family: monospace;
+    /*text-align: right;*/
+    /*line-height: 3px; /*tamanho da altura de cada linha*/
+    letter-spacing: 1px; /*tamanho do espaço entre cada letra*/
+    word-spacing: 1px; /*tamanho do espaço entre cada palavra*/
+    text-indent: 50px; /*tamanho da margem da primeira linha do texto*/
+    /*Padding - padding-top - padding-bottom-
+    padding-left
+    padding: 10px 20px 15px 5px;
+    margin: 0 auto;*/
+}
+
+.logotipo {
+    position: relative;
+    top: 20px;
+    left: 1px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+
 h1 {
-    padding: 10px;
+    font-family: serif;
+    /*imagem de fundo*/
+    background-image: url(../img/sobre-background.jpg);
 }
 
 h2 {
     margin-top: 30px;
 }
 
-p {
-    padding: 0 45px;
-    text-indent: 15px;
+p.paragrafo {
+    text-indent: 0;
+}
+
+p:first-line {
+    font-variant: small-caps;
+}
+
+p::first-line {
+    font-weight: bold;
 }
 
 figure {
@@ -36,6 +108,15 @@ figcaption {
     width: 550px;
 }
 
+#aprentacao, #localizacao {
+    width: 62%;
+    min-height: 315px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #rodape {
     color: #777;
     margin: 30px 0;
@@ -51,4 +132,47 @@ figcaption {
 #familia-pelho {
     float: right;
     margin: 0 0 10px 10px;
+}
+
+footer {
+    background-image: url(../img/fundo-rodape.png);
+    clear: both;
+    padding: 20px 0;
+}
+
+footer .container {
+    position: relative;
+}
+
+.social {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+}
+
+.social li {
+    float: left;
+    margin-left: 25px;
+}
+
+.social a {
+    /*tamanho da imagem*/
+    height: 32px;
+    width: 32px;
+
+    /*image replacement*/
+    display: block;
+    text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter.com"] {
+    background-image: url(../img/twitter.png);
+}
+
+.social a[href*="plus.google.com"] {
+    background-image: url(../img/googleplus.png);
 }

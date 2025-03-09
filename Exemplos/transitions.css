@@ -1,0 +1,76 @@
+/*transitions*/
+#teste1 {
+    position: relative;
+    top: 0;
+}
+
+#teste1:hover {
+    transition: 15s ease-in-out;
+    color: red;
+    font-size: 55px;
+}
+
+#teste2 {
+    position: relative;
+    top: 0;
+    color: white;
+}
+
+#teste2:hover {
+    top: 30px;
+    color: red;
+    transition: top 2s, color 1s ease;
+}
+
+#teste3:hover {
+    transition: all 12s ease;
+    font-size: 30px;
+    color: red;
+}
+
+/*transforms*/
+img {
+    /*move o elemento no eixo horizontal*/
+    transform: translate(50px);
+}
+
+#imagem {
+    /*Move o elemento no eixo vertical*/
+    transform: translateY(-20px);
+}
+
+#imag {
+    /* Move o elemento nos dois eixos (X, Y) */
+    transform: translate(40px, -20px);
+}
+
+/*Rotate*/
+#imga {
+    transform: rotate(-10deg);
+}
+
+/*Scale*/
+li {
+    /* Alterar a escala total do elemento */
+    transform: scale(1.2);
+}
+
+#esc {
+    /* Alterar a escala vertical e horizontal do elemento */
+    transform: scale(1, 0.6);
+}
+
+/*Skew*/
+#sk {
+    /* Distorcer o elemento no eixo vertical */
+    transform: skewY(10deg);
+}
+
+#com {
+    transform: rotate(-30deg) scale(0.4);
+}
+
+
+
+
+

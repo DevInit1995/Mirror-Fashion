@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários a fundo</title>
+  </head>
+  <body>
+    <form action="/efetivar.php" method="post">
+      <label for="nome">Nome:</label>
+
+      <input type="text" name="nome" id="nome" />
+      <br />
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" id="senha" />
+      <br />
+      <input type="submit" />
+      <br />
+      <br />
+      <input id="contrato" name="contrato" type="checkbox" value="sim" />
+      <label for="contrato">Aceito os termos do contrato.</label>
+      <br />
+      <br />
+      <p>
+        <input type="radio" name="idade" id="idade5" value="5" />
+        <label for="idade5">Menos de 5 anos</label>
+      </p>
+
+      <p>
+        <input type="radio" name="idade" id="idade10" value="10" />
+        <label for="idade10">Menos de 10 anos</label>
+      </p>
+
+      <p>
+        <input type="radio" name="idade" id="idade15" value="15" />
+        <label for="idade15">Menos de 15 anos</label>
+      </p>
+
+      <p>
+        <input type="radio" name="idade" id="idade20" value="20" />
+        <label for="idade20">Menos de 20 anos</label>
+      </p>
+      <br />
+      <br />
+      <input type="button" name="mostra_dialogo" value="Clique aqui!" />
+      <input type="submit" name="enviar" value="Enviar" />
+      <input
+        type="image"
+        name="botao"
+        src="/img/busca.png"
+        width="20"
+        height="18"
+      />
+      <input type="reset" name="botao" value="Limpar" />
+      <button type="button" name="enviar">Clique aqui</button>
+      <input type="file" name="anexo" />
+      <input type="hidden" name="codigo" value="abc012xya789" />
+      <textarea name="texto"></textarea>
+      <br />
+      <br />
+      <h1>Select, Optgroup, e Option</h1>
+      <select name="cidades">
+        <option value="bsb">Brasília</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="sp">São Paulo</option>
+      </select>
+      <br />
+      <br />
+      <h4>Select Multiple</h4>
+      <select multiple name="cidades">
+        <option value="bsb">Brasília</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="sp">São Paulo</option>
+        <option value="mg">Minas Gerais</option>
+      </select>
+      <br />
+      <br />
+      <select name="bairro">
+        <optgroup label="Brasília">
+          <option value="asan_bsb">Asa Norte</option>
+          <option value="asas_bsb">Asa Sul</option>
+        </optgroup>
+        <optgroup label="São Paulo">
+          <option value="vlmariana_sp">Vila Mariana</option>
+          <option value="centro_sp">Centro</option>
+        </optgroup>
+        <optgroup label="Rio de Janeiro">
+          <option value="botafogo_rj">Botafogo</option>
+          <option value="centro_rj">Centro</option>
+        </optgroup>
+      </select>
+    </form>
+  </body>
+</html>
